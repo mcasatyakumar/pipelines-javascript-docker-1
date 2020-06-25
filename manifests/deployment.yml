@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: mcasatyakumarpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mcasatyakumarpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: mcasatyakumarpipelinesjavascriptdocker 
+          image: myk8srg.azurecr.io/mcasatyakumarpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
